@@ -1,0 +1,17 @@
+.navbar-logo{
+    background-image: url('../../assets/icons/aw-cyan.png');
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 12px;
+    position: absolute;
+    left: 12px;
+    top: 12px;
+}
+
+.texto{
+    letter-spacing: 0.2rem;
+    font-size: 16pt;
+}

@@ -1,0 +1,13 @@
+/* .footer{
+    border-top: 1px solid #000;
+} */
+
+.copyright {
+    font-family: Arial,
+         "Helvetica Neue",
+         Helvetica,
+         sans-serif;
+}
+.bg-copy{
+    background-color: rgb(93, 103, 104);
+}

@@ -1,3 +1,17 @@
-p{
-    font-size: 36px;
+.parallax, .parallax2, .parallax3{ 
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax{
+    background-image: url('../../assets/images/lotr.jpg');
+}
+.parallax2{
+    background-image: url('../../assets/images/lotr2.jpg');
+}
+.parallax3{
+    background-image: url('../../assets/images/lotr3.jpg');
 }
