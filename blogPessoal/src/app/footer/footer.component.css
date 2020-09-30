@@ -2,6 +2,10 @@
     border-top: 1px solid #000;
 } */
 
+.copy-row{
+    background-color: rgb(31, 31, 31);
+}
+
 .copyright {
     font-family: Arial,
          "Helvetica Neue",
@@ -10,7 +14,7 @@
 }
 
 .rede-social{
-  
+    padding: 24px;
     transition: ease 300ms;
 }
 

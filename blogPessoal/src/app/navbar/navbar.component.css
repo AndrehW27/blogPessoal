@@ -1,6 +1,6 @@
 
 .navbar-inverse{
-    background-color: transparent;
+    background-image: linear-gradient(rgba(0, 0, 0,0.7), transparent);
     border-color: transparent;
 }
 
