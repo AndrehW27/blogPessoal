@@ -11,7 +11,7 @@
 }
 .parallax2{
     background-image: url('../../assets/images/lotr4.jpg');
-}
+} 
 .parallax3{
     background-image: url('../../assets/images/lotr3.jpg');
 }
@@ -53,6 +53,10 @@
 }
 
 
+.texto-plataforma{
+    max-width: 500px;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px){
 
     .carousel-caption h2{
@@ -76,11 +80,7 @@
         padding: 0px 12px;
     }
 
-    .texto-plataforma{
-        background-color: blueviolet;
-        width: 100vw;
-    }
-    .sobremim{
+     .sobremim{
         padding-top: 24px;
     }
 
