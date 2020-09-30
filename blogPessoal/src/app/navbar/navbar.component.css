@@ -1,17 +1,20 @@
-.navbar-logo{
-    background-image: url('../../assets/icons/aw-cyan.png');
-    width: 40px;
-    height: 40px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-right: 12px;
-    position: absolute;
-    left: 12px;
-    top: 12px;
+
+.navbar-inverse{
+    background-color: transparent;
+    border-color: transparent;
 }
 
-.texto{
-    letter-spacing: 0.2rem;
-    font-size: 16pt;
+
+/* .navbar-inverse .navbar-brand{
+    color: #fff;
+    font-size: 40px;
+    padding: 40px 15px;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} */
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+    
 }

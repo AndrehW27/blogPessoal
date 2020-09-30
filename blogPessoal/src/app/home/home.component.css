@@ -7,11 +7,36 @@
 }
 
 .parallax{
-    background-image: url('../../assets/images/lotr.jpg');
+    background-image: url('../../assets/images/lotr2.jpg');
 }
 .parallax2{
-    background-image: url('../../assets/images/lotr2.jpg');
+    background-image: url('../../assets/images/lotr4.jpg');
 }
 .parallax3{
     background-image: url('../../assets/images/lotr3.jpg');
+}
+
+
+
+
+.carousel-caption{
+    top: 250px;
+
+}
+
+.carousel-caption h2{
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+
+.carousel-caption p{
+    font-size: 35px;
+}
+
+
+.fundo-preto{
+    background-color: rgba(0, 0, 0,0.5);
 }
