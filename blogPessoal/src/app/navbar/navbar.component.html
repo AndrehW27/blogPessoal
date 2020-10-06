@@ -18,26 +18,34 @@
       </li>
 
       <div *ngIf='auth.btnLogin()'>
-        <li class="nav-item active">
+        <li class="nav-item active botao-cadastrar">
           <a class="nav-link" routerLink="/cadastro">Cadastrar <span class="sr-only">(current)</span></a>
         </li>
       </div>
 
       <div *ngIf='auth.btnLogin()'>
-        <li class="nav-item active">
+        <li class="nav-item active botao-login">
           <a class="nav-link" routerLink="/login">Login <span class="sr-only">(current)</span></a>
         </li>
       </div>
 
+      <!-- <div *ngIf='auth.btnSair()'>
+        <li class="nav-item active botao-ola">
+          <a class="nav-link botao-sair" >Olá, André.<span class="sr-only">(current)</span></a>
+        </li>
+      </div> -->
+
       <div *ngIf='auth.btnSair()'>
         <li class="nav-item active">
-          <a class="nav-link" (click)='sair()'>Sair <span class="sr-only">(current)</span></a>
+          <a class="nav-link botao-sair" (click)='sair()'>Sair <span class="sr-only">(current)</span></a>
         </li>
       </div>
 
       <li class="nav-item active">
         <a class="nav-link" href="#contato">Contato <span class="sr-only">(current)</span></a>
       </li>
+
+
 
     </ul>
   </div>

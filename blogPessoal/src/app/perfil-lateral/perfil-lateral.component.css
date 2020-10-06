@@ -1,0 +1,9 @@
+.smeagol-foto{
+    height: 250px;
+    width: 250px;
+    background-image: url('../../assets/images/smeagol.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}

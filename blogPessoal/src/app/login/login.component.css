@@ -1,0 +1,22 @@
+.cont-login{
+    height: 100vh;
+    background-image: url('../../assets/images/lotr.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.col-login{
+    border-radius: 0px 20px 20px 0px;    
+    box-shadow: 5px 20px 30px #000;
+}
+
+.sauron{
+    background-image: url('../../assets/images/gandalf.jpg'); 
+    background-position: 10% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    border-radius: 20px 0px 0px 20px;    
+    box-shadow: 5px 20px 30px #000;
+}

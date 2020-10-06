@@ -11,7 +11,7 @@ import { AuthService } from '../service/auth.service';
 export class CadastroComponent implements OnInit {
 
   user: User = new User()
-  senha: String
+  senha: string
 
   constructor(
     private authService: AuthService,
