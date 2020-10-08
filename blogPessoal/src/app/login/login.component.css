@@ -9,7 +9,7 @@
 
 .col-login{
     border-radius: 0px 20px 20px 0px;    
-    box-shadow: 5px 20px 30px #000;
+    box-shadow: 0px 0px 40px 10px #000;
 }
 
 .sauron{
@@ -19,7 +19,7 @@
     background-size: cover;
     
     border-radius: 20px 0px 0px 20px;    
-    box-shadow: 5px 20px 30px #000;
+    box-shadow: 0px 0px 40px 10px #000;
 }
 
 .col-login p a{

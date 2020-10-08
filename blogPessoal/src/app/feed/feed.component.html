@@ -1,10 +1,10 @@
 <!-- CONTAINER 1 -->
 
-<div class="container-fluid class-container mb-5 p-0 ">
-  <div class="row class-row mx-5 ">
+<div class="container-fluid class-container  p-0 d-flex justify-content-center align-items-center ">
+  <div class="row class-row mx-5  w-100">
 
 
-    <div class="col-md-3 class-coluna d-flex justify-content-center align-items-center p-0">
+    <div class="col-md-4 class-coluna d-flex justify-content-center align-items-center p-0">
 
       <app-perfil-lateral class="my-5 text-white"></app-perfil-lateral>
 
@@ -34,7 +34,7 @@
           <div class="col-md-6 ">
             <div class="form-group m-0">
               <label class="text-" for="tema">Escolha um tema ou <a routerLink="/cadastro-tema">Cadastre um
-                  novo</a></label>
+                  novo </a></label>
               <select name="tema" id='tema' class="form-control" [(ngModel)]='idTema' (change)='findByIdTema()'>
                 <option *ngFor='let item of listaTemas' value={{item.id}}>
                   {{item.descricao}}
@@ -62,11 +62,11 @@
 
 <!-- CONTAINER 2 -->
 
-<div class="container-fluid ">
-  <div class="row m-5 d-flex justify-content-center align-items-center">
+<div class="container-fluid container-postagens">
+  <div class="row  d-flex justify-content-center align-items-center">
     <div class="col-md-8  class-coluna d-flex justify-content-center align-items-center p-0">
 
-      <div class="postagens-box bg-dark">
+      <div class="postagens-box ">
 
         <nav class="d-flex justify-content-center">
           <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -88,7 +88,7 @@
                 <input class="form-control w-100" type="search" placeholder="Pesquisar postagem" aria-label="Pesquisar">
               </div>
               <div class="col-md-2 pl-0">
-                <button class="btn btn-outline-warning w-100" type="button">Pesquisar</button>
+                <button class="btn botao-publicar w-100" type="button">Pesquisar</button>
               </div>
             </div>
 
@@ -135,7 +135,7 @@
                 <input class="form-control w-100" type="search" placeholder="Pesquisar postagem" aria-label="Pesquisar">
               </div>
               <div class="col-md-2 pl-0">
-                <button class="btn btn-outline-warning w-100" type="button">Pesquisar</button>
+                <button class="btn botao-publicar w-100" type="button">Pesquisar</button>
               </div>
             </div>
           </div>

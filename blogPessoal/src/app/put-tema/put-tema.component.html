@@ -1,23 +1,30 @@
-<div class="container">
+<div class="container-fluid cont-putema d-flex justify-content-center align-items-center">
 
-    <div class="row mt-5 mb-5">
-        <div class="col-md-4">
-          <app-perfil-lateral></app-perfil-lateral>
-        </div>
-        <div class="col-md-8">
-  
-            <div>
-                <div class="form-group">
-                  <label for="titulo">Nome do tema:</label>
-                  <input type="text" class="form-control" id="titulo" placeholder="Digite aqui o seu titulo" [(ngModel)]="tema.descricao">
-                </div>
-  
-                <div class="d-flex justify-content-end">
-                    <button type="button" class="btn btn-outline-info w-25" (click)="salvar()">Salvar</button>
-                </div>
-            </div>
-  
-        </div>
-  
+  <div class="row mt-5 mb-5 w-100 ">
+    <div class="col-md-4">
+      <app-perfil-lateral></app-perfil-lateral>
     </div>
+
+    <div class="col-md-6">
+      <div class="box-editatema bg-dark">
+        <h3 class="text-center  "> <span style="color: cornflowerblue; "> Edite o tema</span></h3>
+        <div>
+          <div class="form-group">
+            <label for="titulo">Nome do tema:</label>
+            <input type="text" class="form-control" id="titulo" placeholder="Digite aqui o seu titulo"
+              [(ngModel)]="tema.descricao">
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <!-- <button type="button" class="btn botao-publicar w-25 mr-2" routerLink='/feed'>Feed</button> -->
+            <button type="button" class="btn botao-publicar w-25" (click)="salvar()">Salvar</button>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
   </div>
+</div>

@@ -6,4 +6,5 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
+    box-shadow: 0px 0px 30px 15px #000;
 }

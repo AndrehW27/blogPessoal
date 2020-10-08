@@ -1,12 +1,14 @@
-<div class="container">
+<div class="container-fluid cont-putpost d-flex justify-content-center align-items-center">
 
-    <div class="row mt-5 mb-5">
+    <div class="row mt-5 mb-5 w-100">
         <div class="col-md-4">
           <app-perfil-lateral></app-perfil-lateral>
         </div>
-        <div class="col-md-8">
-  
-            <div>
+
+        <div class="col-md-6">
+
+          
+          <div class="box-editapost bg-dark">
                 <div class="form-group">
                   <label for="titulo">Titulo da postagem</label>
                   <input type="text" class="form-control" id="titulo" aria-describedby="emailHelp" placeholder="Digite aqui o seu titulo" [(ngModel)]="postagem.titulo">
@@ -18,7 +20,7 @@
                 </div>
   
                 <div class="form-group m-0">
-                  <label class="text-monospace" for="tema">Escolha um tema ou <a routerLink="/cadastrar-tema">Cadastre um novo</a></label>
+                  <label class="" for="tema">Escolha um tema ou <a routerLink="/cadastrar-tema">Cadastre um novo</a></label>
                   <select name="tema" id='tema' [(ngModel)]="idTema" (change)="findByIdTema()" class="form-control">
                     <option *ngFor="let item of listaTemas" value={{item.id}}>
                       {{item.descricao}}
@@ -27,7 +29,7 @@
                 </div>
   
                 <div class="d-flex justify-content-end mt-3">
-                    <button type="button" class="btn btn-outline-info w-25" (click)="salvar()">Salvar</button>
+                    <button type="button" class="btn botao-publicar w-25" (click)="salvar()">Salvar</button>
                 </div>
             </div>
   
