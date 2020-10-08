@@ -20,9 +20,6 @@ export class PostagemService {
   postPostagem(postagem: Postagem){
     return this.http.post('http://localhost:8080/postagens', postagem, this.token)
   }
-
-
-
-
-
 }
+
+

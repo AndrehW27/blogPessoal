@@ -1,12 +1,49 @@
-/* .cont-feed{
+.class-container{
     height: 100vh;
-    background-image: url('../../assets/images/lotr.jpg'); 
+    background-image: url('../../assets/images/bg-ring.jpg'); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: 0 0 1000px 80px black inset;    
+}
+
+/* .class-row{       
 } */
 
 
+.class-coluna{
+    min-height: 100vh;   
+}
+
+.div-publicar{
+    width: 100%;
+    border-radius: 12px;
+    padding: 36px;
+    color: white; 
+     
+}
+
+.botao-publicar{
+    border-radius: 6px;
+    background-color: cornflowerblue;
+    color: white;
+    transition: ease-in-out 200ms;
+}
+
+.botao-publicar:hover{
+    opacity: 0.8;
+    border: 1px solid white;
+    
+}
+
+.postagens-box{
+    max-height: 80vh;  
+    padding: 24px;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 12px;
+}
 
 
 

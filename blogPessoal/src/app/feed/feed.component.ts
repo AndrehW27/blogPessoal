@@ -47,10 +47,10 @@ export class FeedComponent implements OnInit {
       alert('Preencha todos os campos')
     } else {
       this.postagemService.postPostagem(this.postagem).subscribe((resp: Postagem) => {
-        this.postagem = resp
-        this.postagem = new Postagem()
+        this.postagem = resp        
         alert('Postagem realizada com sucesso!')
         this.findAllPostagens()
+        this.postagem = new Postagem()
       })
     }
   }

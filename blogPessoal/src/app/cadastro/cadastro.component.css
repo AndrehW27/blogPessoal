@@ -1,14 +1,26 @@
 .cont-cadastro{
     height: 100vh;
-    background-image: url('../../assets/images/lotr.jpg'); 
+    background-image: url('../../assets/images/bg-sauron3.jpg'); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: 0 0 1000px 80px black inset;
 }
 
 .col-cadastro{ 
     border-radius: 0px 20px 20px 0px; 
     box-shadow: 5px 20px 30px #000;
+}
+
+.col-cadastro p a{
+    font-weight: bold;
+    color: rgb(192, 54, 4);
+    transition: ease 200ms;
+}
+
+.col-cadastro p a:hover{
+   opacity: 0.9;
+   /* text-decoration: none; */
 }
 
 .sauron{
@@ -18,4 +30,15 @@
     background-size: cover;    
     border-radius: 20px 0px 0px 20px;  
     box-shadow: 5px 20px 30px #000;
+}
+
+.botao-cadastro{
+    color:white;
+    background-color: rgb(192, 54, 4);
+    transition: ease-in-out 200ms;
+}
+
+.botao-cadastro:hover{
+    opacity: 0.9;
+    border: 1px solid white;
 }

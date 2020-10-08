@@ -11,11 +11,18 @@
       <li class="nav-item active">
         <a class="nav-link" routerLink='/home'>Home <span class="sr-only">(current)</span></a>
       </li>
-
-
+      
       <li class="nav-item active">
-        <a class="nav-link" routerLink='/feed'>Feed <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#contato">Contato <span class="sr-only">(current)</span></a>
       </li>
+
+      <div *ngIf='auth.btnSair()'>
+        <li class="nav-item active botao-feed">
+          <a class="nav-link" routerLink='/feed'>Feed <span class="sr-only">(current)</span></a>
+        </li>
+      </div>    
+
+      
 
       <div *ngIf='auth.btnLogin()'>
         <li class="nav-item active botao-cadastrar">
@@ -36,15 +43,12 @@
       </div> -->
 
       <div *ngIf='auth.btnSair()'>
-        <li class="nav-item active">
-          <a class="nav-link botao-sair" (click)='sair()'>Sair <span class="sr-only">(current)</span></a>
+        <li class="nav-item active botao-sair">
+          <a class="nav-link " (click)='sair()'>Sair <span class="sr-only">(current)</span></a>
         </li>
       </div>
 
-      <li class="nav-item active">
-        <a class="nav-link" href="#contato">Contato <span class="sr-only">(current)</span></a>
-      </li>
-
+   
 
 
     </ul>

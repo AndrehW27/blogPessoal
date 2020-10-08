@@ -1,9 +1,10 @@
 .cont-login{
     height: 100vh;
-    background-image: url('../../assets/images/lotr.jpg'); 
+    background-image: url('../../assets/images/bg-gandalf1.jpg'); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: 0 0 1000px 80px black inset;
 }
 
 .col-login{
@@ -19,4 +20,26 @@
     
     border-radius: 20px 0px 0px 20px;    
     box-shadow: 5px 20px 30px #000;
+}
+
+.col-login p a{
+    font-weight: bold;
+    color: #28a745 ;
+    transition: ease 200ms;
+}
+
+.col-login p a:hover{
+   opacity: 0.9;
+   /* text-decoration: none; */
+}
+
+.botao-login{
+    color:white;
+    background-color: #28a745;
+    transition: ease-in-out 200ms;
+}
+
+.botao-login:hover{
+    opacity: 0.9;
+    border: 1px solid white;
 }
