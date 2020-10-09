@@ -397,7 +397,7 @@ export class LoginComponent implements OnInit {
     this.authService.logar(this.userLogin).subscribe((resp: UserLogin) &#x3D;&gt; {
       this.userLogin &#x3D; resp
       environment.token &#x3D; this.userLogin.token
-
+      console.log(&#x27;token: &#x27;+ environment.token)
       this.router.navigate([&#x27;/feed&#x27;])
       this.alert.showAlertSuccess(&#x27;Login realizado com sucesso&#x27;)
     })
