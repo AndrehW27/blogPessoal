@@ -36,6 +36,7 @@
               <label class="text-" for="tema">Escolha um tema ou <a routerLink="/cadastro-tema">Cadastre um
                   novo </a></label>
               <select name="tema" id='tema' class="form-control" [(ngModel)]='idTema' (change)='findByIdTema()'>
+               
                 <option *ngFor='let item of listaTemas' value={{item.id}}>
                   {{item.descricao}}
                 </option>
@@ -86,7 +87,7 @@
                 <input class="form-control w-100" type="search" placeholder="Pesquisar postagem" aria-label="Pesquisar" [(ngModel)]='titulo'>
               </div>
               <div class="col-md-2 pl-0">
-                <button class="btn btn-outline-warning w-100" type="button" (click)='findByTituloPostagem()'>Pesquisar</button>
+                <button class="btn botao-pesquisar w-100" type="button" (click)='findByTituloPostagem()'>Pesquisar</button>
               </div>
             </div>
   
@@ -96,9 +97,14 @@
                 <div class="card mt-5 mb-5"  *ngFor="let item of listaPostagens | orderBy : key : reverse">
                   <div class="card-header">
                       <div class="row d-flex align-items-center">
-                          <div class="col-md-8">
+                          <div class="col-md-8 ">
                               <h5 class="card-title"> {{item.titulo}} </h5>
+
                               <small>Tema: {{item.tema.descricao}} </small>
+                             
+                    
+
+                               
                           </div>
                           <div class="col-md-4 d-flex justify-content-end">
   
@@ -134,7 +140,7 @@
                 <input class="form-control w-100" type="search" placeholder="Pesquisar postagem" aria-label="Pesquisar" [(ngModel)]='nomeTema'>
               </div>
               <div class="col-md-2 pl-0">
-                <button class="btn btn-outline-warning w-100" type="button" (click)='findByNomeTema()'>Pesquisar</button>
+                <button class="btn botao-pesquisar w-100" type="button" (click)='findByNomeTema()'>Pesquisar</button>
               </div>
             </div>
   
@@ -147,6 +153,7 @@
                       <div class="row d-flex align-items-center">
                           <div class="col-md-12">
                               <h5 class="card-title"> {{post.titulo}} </h5>
+                               <!-- <small>Tema: {{item.tema.descricao}} </small> -->
                           </div>
                       </div>
                   </div>

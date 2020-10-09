@@ -37,6 +37,19 @@
     
 }
 
+.botao-pesquisar{
+    border-radius: 6px;
+    background-color: cornflowerblue;
+    color: white;
+    transition: ease-in-out 200ms;
+}
+
+.botao-pesquisar:hover{
+    opacity: 0.8;
+    border: 1px solid white;
+    
+}
+
 .postagens-box{
     max-height: 80vh;  
     padding: 24px;
