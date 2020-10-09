@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
     this.authService.logar(this.userLogin).subscribe((resp: UserLogin) => {
       this.userLogin = resp
       environment.token = this.userLogin.token
-      console.log('token: '+ environment.token)
+      
       this.router.navigate(['/feed'])
       this.alert.showAlertSuccess('Login realizado com sucesso')
     })
