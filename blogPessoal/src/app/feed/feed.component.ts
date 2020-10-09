@@ -77,8 +77,8 @@ export class FeedComponent implements OnInit {
     if (this.titulo === '') {
       this.findAllPostagens()      
     } else {
-      this.postagemService.getByTituloPostagem(this.nomeTema).subscribe((resp: Tema[]) => {
-        this.listaTemas = resp
+      this.postagemService.getByTituloPostagem(this.titulo).subscribe((resp: Postagem[]) => {
+        this.listaPostagens = resp
       })
     }  
   }
@@ -88,8 +88,8 @@ export class FeedComponent implements OnInit {
     if (this.nomeTema === '') {
       this.findAllTemas()      
     } else {
-      this.temaService.getByNomeTema(this.titulo).subscribe((resp: Postagem[]) => {
-        this.listaPostagens = resp
+      this.temaService.getByNomeTema(this.nomeTema).subscribe((resp: Tema[]) => {
+        this.listaTemas = resp
       })
     }  
   }
